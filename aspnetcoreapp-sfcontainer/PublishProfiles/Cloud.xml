@@ -20,7 +20,7 @@
                                     AzureActiveDirectory="true"
                                     ServerCertThumbprint="0123456789012345678901234567890123456789" />
   -->
-  <ClusterConnectionParameters ConnectionEndpoint="" />
+  <ClusterConnectionParameters ConnectionEndpoint="hectagonsfcluster.westus.cloudapp.azure.com:19000" X509Credential="true" ServerCertThumbprint="F9C4BB1C7B74F60700DAD0A4F1909F83A1535B68" FindType="FindByThumbprint" FindValue="F9C4BB1C7B74F60700DAD0A4F1909F83A1535B68" StoreLocation="CurrentUser" StoreName="My" />
   <ApplicationParameterFile Path="..\ApplicationParameters\Cloud.xml" />
   <CopyPackageParameters CompressPackage="true" />
 </PublishProfile>

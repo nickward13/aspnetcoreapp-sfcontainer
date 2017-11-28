@@ -13,6 +13,12 @@
   <ServiceManifestImport>
     <ServiceManifestRef ServiceManifestName="aspnetcoreappPkg" ServiceManifestVersion="1.0.0" />
     <ConfigOverrides />
+    <Policies>
+      <ContainerHostPolicies CodePackageRef="code">
+        <PortBinding ContainerPort="80" EndpointRef="aspnetcoreappTypeEndpoint"/>
+        <RepositoryCredentials AccountName="hectagonacr" Password="Jhc71ikb0X0E9RYH9lixdSCLN71JP=pi" PasswordEncrypted="false"/>
+      </ContainerHostPolicies>
+    </Policies>
   </ServiceManifestImport>
   <DefaultServices>
     <!-- The section below creates instances of service types, when an instance of this 
